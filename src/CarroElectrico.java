@@ -16,7 +16,7 @@ public class CarroElectrico implements VehiculoElectrico{
 
     @Override
     public void niveldecarga() {
-        System.out.println(getCargaBateria()+getNuevaCarga());
+        System.out.println("Nivel de bateria: "+getCargaBateria()+getNuevaCarga());
 
     }
 
