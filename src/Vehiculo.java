@@ -18,7 +18,11 @@ abstract public class Vehiculo   {
         System.out.println("nivel de combustible: " + nivelCombustible );
         System.out.println("cuanto combustible desea cargar?");
         n = teclado.nextInt();
+        if (n >= 1){
         System.out.println("nivel de combustible: "+(n+nivelCombustible));
+        } if (n < 0){
+            System.out.println("El nivel de combustible debe ser mayor a 0");
+        }
     }
 
 

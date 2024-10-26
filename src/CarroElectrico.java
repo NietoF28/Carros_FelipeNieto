@@ -4,6 +4,7 @@ public class CarroElectrico implements VehiculoElectrico{
     Scanner teclado = new Scanner(System.in);
     private int cargaBateria = 10;
     private int nuevaCarga;
+
     @Override
     public void cargarbateria() {
 
