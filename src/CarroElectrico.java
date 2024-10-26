@@ -10,14 +10,20 @@ public class CarroElectrico implements VehiculoElectrico{
         System.out.println("Bateria actual: "+ getCargaBateria());
         System.out.println("Ingresar carga: ");
         setNuevaCarga(teclado.nextInt());
-        System.out.println("Carga actual: "+ ( getCargaBateria()+getNuevaCarga() ));
-
+        if (getNuevaCarga()>=1) {
+            System.out.println("Se cargo correctamente");
+        } else if (getNuevaCarga()<1) {
+            System.out.println("Carga insuficiente");
+        }
     }
 
     @Override
     public void niveldecarga() {
-        System.out.println("Nivel de bateria: "+getCargaBateria()+getNuevaCarga());
-
+        if (getNuevaCarga()>=1) {
+            System.out.println("Nivel de bateria: " + (getCargaBateria() + getNuevaCarga()));
+        } else if (getNuevaCarga()<1) {
+            System.out.println("No se a cargado");
+        }
     }
 
     public CarroElectrico(int cargaBateria, int nuevaCarga) {
@@ -43,4 +49,5 @@ public class CarroElectrico implements VehiculoElectrico{
     public void setNuevaCarga(int nuevaCarga) {
         this.nuevaCarga = nuevaCarga;
     }
+
 }

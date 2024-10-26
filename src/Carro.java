@@ -1,5 +1,6 @@
-public class Carro extends Vehiculo{
 
+
+public class Carro extends Vehiculo{
 
     @Override
     public void encender() {
@@ -16,6 +17,11 @@ public class Carro extends Vehiculo{
         System.out.println("Marca: "+getMarca()+" ,Modelo: "+getModelo()
         +",Combustible: "+getCombustible());
 
+    }
+
+    @Override
+    public void setNivelCombustible(int nivelCombustible) {
+        super.setNivelCombustible(nivelCombustible);
     }
 
     public Carro(String marca, String modelo, String combustible) {

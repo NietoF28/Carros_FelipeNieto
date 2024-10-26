@@ -24,4 +24,9 @@ public class Camion extends Vehiculo{
     public Camion(String marca, String modelo, String combustible) {
         super(marca, modelo, combustible);
     }
+
+    @Override
+    public void setNivelCombustible(int nivelCombustible) {
+        super.setNivelCombustible(nivelCombustible);
+    }
 }

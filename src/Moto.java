@@ -22,4 +22,9 @@ public class Moto extends Vehiculo{
     public Moto(String marca, String modelo, String combustible) {
         super(marca, modelo, combustible);
     }
+
+    @Override
+    public void setNivelCombustible(int nivelCombustible) {
+        super.setNivelCombustible(nivelCombustible);
+    }
 }
